@@ -91,8 +91,8 @@
          name: "{{ item  }}"
          state: stopped
          enabled: no
-       with_items: "{{ unnecessary_services  }}"
-       ignore_errors: yes
+      with_items: "{{ unnecessary_services  }}"
+      ignore_errors: yes
           
     - name: Set a message of the day
       copy: 
