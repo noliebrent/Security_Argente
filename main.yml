@@ -67,7 +67,7 @@
     - name: Add permitted networks to internal zone
       firewalld:
         zone: internal
-        source: *{{ item  }}*
+        source: "{{ item  }}"
         state: enabled
         immediate: yes
         permanent: yes
